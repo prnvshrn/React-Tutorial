@@ -12,6 +12,15 @@ class Square extends React.Component {
     }
 }
 
+class Test extends React.Component{
+    render()
+    {
+        return(
+            <h2>Testing React</h2>
+        );
+    }
+}
+
 class Board extends React.Component {
     renderSquare(i) {
         return <Square />;
@@ -53,6 +62,9 @@ class Game extends React.Component {
                 <div className="game-info">
                     <div>{/* status */}</div>
                     <ol>{/* TODO */}</ol>
+                </div>
+                <div className="Test">
+                    <Test />
                 </div>
             </div>
         );
