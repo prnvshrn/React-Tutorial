@@ -14,3 +14,19 @@ class Test extends React.Component{
     }
 }
 ``` 
+### Props
+```
+class Board extends React.Component {
+    renderSquare(i) {
+        return <Square value={i}/>;
+    }
+    
+render() {
+        return (
+            <button className="square">
+                {this.props.value}
+            </button>
+        );
+    }    
+    
+```    
