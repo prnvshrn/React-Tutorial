@@ -30,3 +30,21 @@ render() {
     }    
     
 ```    
+### States
+```
+var Login = React.createClass({
+
+    getInitialState:function()
+    {
+        return{checked:true}
+    },
+    render:function(){
+            var msg;
+            if(this.state.checked){msg='Ok alright';}
+            else{msg='Not OK';}
+            return(<div>{msg}</div>
+            );
+        }
+});
+
+```
